@@ -1,0 +1,195 @@
+.product-of-the-week {
+  position: relative;
+}
+
+.product-of-the-week::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    width: 100%;
+    height: 24px;
+    position: absolute;
+    top: -12px;
+    left: 0;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    background-position: center;
+    background-repeat: repeat-x;
+    z-index: -1;
+  }
+}
+
+.product-of-the-week__wrapper {
+  padding-top: 40px;
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: auto 1fr auto;
+    column-gap: 42px;
+    row-gap: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    column-gap: 58px;
+    row-gap: 42px;
+  }
+}
+
+.product-of-the-week__title {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: #000000;
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+}
+
+.product-of-the-week__promo {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #63D1BB;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 22px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 17px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: min-content;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.product-of-the-week__block-discription {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+
+.product-of-the-week__block-image {
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/4;
+    grid-row: 2/4;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/4;
+    grid-row: 1/4;
+  }
+}
+
+.product-of-the-week__block-price-and-buy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+  }
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+}
+
+.product-of-the-week__text {
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #444444;
+}
+
+.product-of-the-week__card-list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-auto-rows: 40px;
+}
+
+.product-of-the-week__card-parameters {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 20px;
+  padding-right: 30px;
+  border-bottom: solid 1px #ECECEC;
+}
+
+.product-of-the-week__card-discription {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 20px;
+  border-bottom: solid 1px #ECECEC;
+}
+
+.product-of-the-week__price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.product-of-the-week__button {
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

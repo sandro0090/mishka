@@ -1,0 +1,19 @@
+.footer-button {
+  outline: none;
+  fill: #231F20;
+
+  &.footer-button__accent-color {
+    fill: #63D1BB;
+  }
+
+  &:hover,
+  &:focus {
+    fill: #46C1AE;
+  }
+
+  &:active {
+    fill: #46C1AE;
+    opacity: 0.3;
+  }
+}
+

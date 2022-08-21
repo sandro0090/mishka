@@ -1,0 +1,119 @@
+.about {
+}
+
+.about__line {
+  content: "";
+  height: 6px;
+  background-image: url("../img/zigzag-line-desktop.svg");
+  background-position: center;
+  background-repeat: repeat-x;
+  margin-bottom: 31px;
+}
+
+.about__wrapper {
+  padding-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 90px;
+  }
+}
+
+.about__wrapper.padding {
+  @media (min-width: $desktop-width) {
+
+    padding-left: 174px;
+    padding-right: 174px;
+  }
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.about__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+  }
+}
+
+.about__item {
+  padding-top: 80px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-image: url("../img/about-icon-1.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 50px;
+  }
+}
+
+.about__item--ecology::before {
+  background-image: url("../img/about-icon-1.svg");
+}
+
+.about__item--price::before {
+  background-image: url("../img/about-icon-2.svg");
+}
+
+.about__item--like::before {
+  background-image: url("../img/about-icon-3.svg");
+}
+
+.about__item--love::before {
+  background-image: url("../img/about-icon-4.svg");
+}
+
+.about__item--support::before {
+  background-image: url("../img/about-icon-5.svg");
+}
+
+.about__item--gift::before {
+  background-image: url("../img/about-icon-6.svg");
+}
+
+.about__image {
+}
+
+.about__text {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

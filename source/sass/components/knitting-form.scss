@@ -1,0 +1,293 @@
+.knitting__title {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  /* identical to box height, or 111% */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  color: #000000;
+  min-height: 177px;
+
+  background: #F1F1F1;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    min-height: 238px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    min-height: 255px;
+
+  }
+
+}
+.knitting-form {
+  padding-bottom: 50px;
+}
+.knitting-form__discription {
+  font-size: 13px;
+  line-height: 24px;
+  padding-top: 17px;
+  padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 78px;
+    padding-bottom: 63px;
+  }
+}
+.knitting-form__fieldset {
+
+  display: flex;
+  flex-direction: column;
+  padding-top: 31px;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+  }
+
+}
+.knitting-form__fieldset--type {
+
+  @media (min-width: $tablet-width) {
+
+  }
+}
+.knitting-form__legend {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  color: #63D1BB;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    min-width: 167px;
+    padding-top: 17px;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 113x;
+
+  }
+
+
+/*   float: left;
+    width: 100%; */
+
+
+
+}
+.knitting-form__type-list {
+
+}
+.knitting-form__type-item {
+}
+.knitting-form__type-input {
+}
+.knitting-form__type-label {
+}
+
+.knitting-form__fieldset--color {
+  @media (min-width: $tablet-width) {
+    background: #F1F1F1;
+  }
+
+}
+.knitting-form__type-list,
+.knitting-form__color-list {
+  @media (max-width: $mobile-width-only) {
+    display: grid;
+    gap: 23px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+.knitting-form__type-item,
+.knitting-form__color-item {
+  display: flex;
+  align-items: center;
+  min-height: 38px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 52px;
+  }
+}
+
+.knitting-form__color-input {
+}
+
+.knitting-form__color-label {
+}
+
+.knitting-form__fieldset--name {
+
+}
+
+.knitting-form__name-list {
+  flex: 1;
+}
+
+.knitting-form__name-item {
+}
+
+.knitting-form__name-label {
+  @media (min-width: $tablet-width) {
+    padding-right: 24px;
+  }
+
+}
+
+.knitting-form__input-text {
+  width: 100%;
+
+  background: transparent;
+  border-bottom: 2px solid #000000;
+  min-height: 52px;
+
+
+
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: #62D1BA;
+  }
+
+  &:active {
+    outline: none;
+  }
+
+}
+
+.knitting-form__input-text.knitting-form__input-text--textarea {
+  border: 2px solid #000000;
+  &:hover,
+  &:focus {
+    border-color: #62D1BA;
+  }
+}
+
+/* .knitting-form__input-textarea {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+
+} */
+
+.knitting-form__label-text {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
+.knitting-form__name-input {
+/*   background: transparent;
+  &:focus {
+    outline: none;
+  } */
+}
+
+.knitting-form__fieldset--phone {
+
+  @media (min-width: $tablet-width) {
+    background: #F1F1F1;
+  }
+}
+
+.knitting-form__phone-input {
+
+}
+
+
+.knitting-form__fieldset--email {
+
+  @media (min-width: $tablet-width) {
+    background: #F1F1F1;
+  }
+}
+
+.knitting-form__email-input {
+
+}
+
+.knitting-form__fieldset--additional {
+}
+
+.knitting-form__additional-input {
+}
+
+.knitting-form__button-and-note-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.knitting-form__note {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 30px;
+  }
+
+}
+
+.button.knitting-form__button {
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+    margin-left: 0;
+    width: fit-content;
+  }
+}

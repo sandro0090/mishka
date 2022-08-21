@@ -1,0 +1,68 @@
+.header {
+  min-height: 79px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+
+    min-height: 89px;
+
+  }
+
+}
+
+.header__logo-wrapper {
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 79px; */
+/*   background-color: bisque; */
+
+  @media (max-width: $mobile-width-only) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 22px;
+    left: 50px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 9px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.header__logo {
+
+  cursor: pointer;
+  display: flex;
+  width: 86px;
+  height: 35px;
+
+  background-image: url("/img/mishka-logo-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 46px;
+    background-image: url("/img/mishka-logo-tablet.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+    background-image: url("/img/mishka-logo-desktop.svg");
+  }
+}
+
+.header__logo-svg {
+  width: 86px;
+  height: 35px;
+}

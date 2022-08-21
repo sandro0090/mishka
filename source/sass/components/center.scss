@@ -1,0 +1,17 @@
+.center {
+  margin-left: auto; /*центрирование*/
+  margin-right: auto; /*центрирование*/
+
+  @media (max-width: $mobile-width-only) { /*планшетная ширина окна*/
+    max-width: 500px; /*макс ширина содержимого для мобильных*/
+  }
+
+  @media (min-width: $tablet-width) { /*планшетная ширина окна*/
+
+    min-width: 668px;
+  }
+
+  @media (min-width: $desktop-width) { /*десктопная ширина окна*/
+    width: 1150px;
+  }
+}

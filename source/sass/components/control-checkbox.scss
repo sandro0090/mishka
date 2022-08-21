@@ -1,0 +1,47 @@
+.control-checkbox {
+  position: relative;
+  display: block;
+  padding-left: 61px;
+  cursor: pointer;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 82px;
+  }
+}
+
+.control-checkbox__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #444444;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.control-checkbox__label {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.control-checkbox__input:checked + .control-checkbox__mark::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-image: url("../img/checkbox-tick-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/checkbox-tick-tablet.svg");
+  }
+}

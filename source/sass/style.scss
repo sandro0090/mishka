@@ -1,1 +1,44 @@
-// Начните писать стили здесь
+// Globals
+@import "./global/variables.scss";
+@import "./global/global.scss";
+@import "./global/reset.scss";
+
+
+
+
+//components
+
+/* @import "./components/page.scss";
+@import "./components/page-main.scss";
+@import "./components/page-header.scss";*/
+@import "./components/page.scss";
+@import "./components/header.scss";
+@import "./components/main.scss";
+@import "./components/footer.scss";
+@import "./components/footer-button.scss";
+@import "./components/visually-hidden.scss";
+@import "./components/button.scss";
+@import "./components/center.scss";
+@import "./components/padding.scss";
+@import "./components/svg-hover.scss";
+@import "./components/wave.scss";
+
+// вязание на заказ
+@import "./components/knitting-form.scss";
+@import "./components/control-checkbox.scss";
+@import "./components/control-radio.scss";
+
+
+
+
+
+//components - header
+@import "./components/navigation.scss";
+@import "./components/additional-navigation.scss";
+
+//components - index
+@import "./components/lovely-things.scss";
+@import "./components/product-of-the-week.scss";
+@import "./components/about.scss";
+@import "./components/reviews.scss";
+@import "./components/contacts.scss";
